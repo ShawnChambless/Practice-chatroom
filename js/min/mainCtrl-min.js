@@ -1,0 +1,1 @@
+var app=angular.module("chatroom");app.controller("mainCtrl",function(a,t){a.getParseData=function(){t.getData().then(function(t){a.messages=t.data.results})},a.postData=function(){t.postData(a.message)},setInterval(function(){a.getParseData()},1500)});

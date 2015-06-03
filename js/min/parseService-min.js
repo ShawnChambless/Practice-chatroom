@@ -1,0 +1,1 @@
+var app=angular.module("chatroom");app.service("parseService",function(t){this.getData=function(){return t({method:"GET",url:"https://api.parse.com/1/classes/chat?order=-createdAt"})},this.postData=function(a){return t({method:"POST",url:"https://api.parse.com/1/classes/chat",data:{text:a}})}});
